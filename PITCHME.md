@@ -18,6 +18,7 @@ https://docs.python.org/ja/3/tutorial/classes.html
 ---
 
 ### ∑(ﾟДﾟ)
+とりあえず実物を見てみよう
 ---
 
 ### 基本系
