@@ -3,8 +3,10 @@
 
 ### 公式サイトを読んでみよう。
 
-9. クラス — Python 3.8.2rc1 ドキュメント
+#### 9. クラス — Python 3.8.2rc1 ドキュメント
+
 https://docs.python.org/ja/3/tutorial/classes.html
+
 
 ```txt
 クラスはデータと機能を組み合わせる方法を提供します。 
@@ -22,15 +24,15 @@ https://docs.python.org/ja/3/tutorial/classes.html
 ---
 
 ### お題
+
 ファーストフードのレジシステムをクラスで作ろう
 ---
 
 ### まずなにが必要？
 
-ファーストフードレジシステムに必要な機能
 ---
 
-### ファーストフードレジシステムに必要な機能
+### 必要な機能
 
 1. メニューを登録
 1. 注文を登録
@@ -39,6 +41,9 @@ https://docs.python.org/ja/3/tutorial/classes.html
 1. お金を受領しよう
 1. お釣りを確認しよう
 1. 領収書を発行
+
+
+### 先ほどの機能をプログラムで使いやすい名前に変更してみる
 
 ---
 
@@ -62,15 +67,15 @@ https://docs.python.org/ja/3/tutorial/classes.html
 ```python
 class FirstFoodSystem:
     def set_menu(self, menu):
-        self.menu = menu
+        pass
     def set_order(self, order):
-        self.order = order
+        pass
     def get_order(self):
         pass
     def get_total_price(self):
         pass
     def set_deposit(self, deposit):
-         self.deposit
+        pass
     def get_change(self):
         pass
     def get_receipt(self):
@@ -86,7 +91,7 @@ class FirstFoodSystem:
 
 ### 利用方法 1
 
-```
+```mcdonalds.py
 mcdonalds = FirstFoodSystem()
 mcdonalds.set_menu(menu_dict)
 mcdonalds.set_order('ハンバーガー')
@@ -101,7 +106,7 @@ mcdonalds.get_receipt()
 ---
 ### 利用方法 2
 
-```
+```yoshinoya.py
 yoshinoya = FirstFoodSystem()
 yoshinoya.set_menu(menu_dict)
 yoshinoya.set_order('牛丼並')
