@@ -25,11 +25,7 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 ### お題
 
-ファーストフードのレジシステムをクラスで作ろう
----
-
-### まずなにが必要？
-
+ファーストフードのレジシステムをクラスを使用して作ってみる
 ---
 
 ### 必要な機能
@@ -60,9 +56,7 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 ---
 
-### Pythonのお作法に従うと
-
-クラスの原型完成
+### プログラムのソースコードに落としてみる
 
 ```python
 class FirstFoodSystem:
@@ -81,6 +75,9 @@ class FirstFoodSystem:
     def get_receipt(self):
         pass
 ```
+---
+
+### できたんじゃね ٩(ˊᗜˋ*)و 
 
 ---
 
@@ -119,5 +116,6 @@ yoshinoya.get_receipt()
 ```
 
 
+---
 
 ### おわり
