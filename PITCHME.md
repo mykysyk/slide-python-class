@@ -46,7 +46,7 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 |変更前                |変更後 |
 |--                   |-- |--- |
-| ファーストフードレジシステム | FirstFoodSystem | 
+| ファーストフードレジシステム | FastFoodSystem | 
 | メニューを登録          | set_menu |
 | 注文を登録            | set_order |
 | 注文を確認            | get_order |
@@ -60,7 +60,7 @@ https://docs.python.org/ja/3/tutorial/classes.html
 ### ソースコードに落としてみる
 
 ```python
-class FirstFoodSystem:
+class FastFoodSystem:
     def set_menu(self, menu):
         pass
     def set_order(self, order):
@@ -78,7 +78,7 @@ class FirstFoodSystem:
 ```
 ---
 
-### できたんじゃね ٩(ˊᗜˋ*)و 
+### ٩(ˊᗜˋ*)و 
 
 ---
 
@@ -95,10 +95,10 @@ mcdonalds.set_menu(menu_dict)
 mcdonalds.set_order('ハンバーガー')
 mcdonalds.set_order('ポテト')
 mcdonalds.set_order('コーラー')
-mcdonalds.get_order()
-mcdonalds.get_total_price()  # 300
-mcdonalds.set_deposit(500)
-mcdonalds.get_change()       # 200
+mcdonalds.get_order()        # ['ハンバーガー', 'ポテト', 'コーラー']
+mcdonalds.get_total_price()  # 500
+mcdonalds.set_deposit(1000)
+mcdonalds.get_change()       # 500
 mcdonalds.get_receipt()
 ```
 ---
