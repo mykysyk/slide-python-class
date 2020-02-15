@@ -64,18 +64,25 @@ https://docs.python.org/ja/3/tutorial/classes.html
 ```python
 class FastFoodSystem:
     def set_menu(self, menu):
+        """ メニューを登録 """
         pass
     def set_order(self, order):
+        """  """
         pass
     def get_order(self):
+        """  """
         pass
     def get_total_price(self):
+        """  """
         pass
     def set_deposit(self, deposit):
+        """  """
         pass
     def get_change(self):
+        """  """
         pass
     def get_receipt(self):
+        """  """
         pass
 ```
 ---
