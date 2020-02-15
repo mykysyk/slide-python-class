@@ -26,7 +26,7 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 class ClassName:                # クラス名 (クラスの名前は CapWords 方式)
     COUNTER = 0                 # クラス変数 (すべてのインスタンスで共有して使う属性)
-    def __init__(self):         # コンストラクタ
+    def __init__(self):         # コンストラクタ (クラスのインスタンスが生成された際に呼び出される)
         self.value = None       # インスタンス変数 (そのインスタンスだけで使う属性)
         
     def set(self, value):       # メソッド
