@@ -124,7 +124,7 @@ class FastFoodSystem:
 
 ```python
 menu_dict = {'コーラー': 100, 'ハンバーガー': 110, 'ポテト': 100}
-mc = FirstFoodSystem()
+mc = FastFoodSystem()
 mc.set_menu(menu_dict)
 mc.set_order('ハンバーガー')
 mc.set_order('ポテト')
