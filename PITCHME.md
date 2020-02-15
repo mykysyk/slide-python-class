@@ -23,6 +23,27 @@ https://docs.python.org/ja/3/tutorial/classes.html
 ### 習うより慣れてみるのが一番
 ---
 
+###
+
+```python
+
+classself.value:
+    def __init__(self):
+        self.value = None
+        
+    def set(self, value):
+        self.value = value
+        
+    def stdout(self, value):
+        print(self.value)
+
+class_name = ClassName()
+class_name.set('HelloWorld')
+class_name.stdout() # HelloWorld
+```
+
+---
+
 ### お題
 
 ファーストフードのレジシステムをクラスを使用して作ってみる
