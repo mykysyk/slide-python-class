@@ -59,6 +59,8 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 ### ソースコードに落としてみる
 
+---
+
 ```python
 class FastFoodSystem:
     def set_menu(self, menu):
