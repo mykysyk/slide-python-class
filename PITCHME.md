@@ -46,6 +46,9 @@ print(value)                    # HelloWorld が 出力される
 https://pep8-ja.readthedocs.io/ja/latest/
 ---
 
+### ∑(ﾟДﾟ)
+---
+
 ### 習うより慣れてみるのが一番
 ---
 
