@@ -23,23 +23,25 @@ https://docs.python.org/ja/3/tutorial/classes.html
 ### 習うより慣れてみるのが一番
 ---
 
-###
+### 基本系
 
 ```python
 
-classself.value:
+class ClassName:
     def __init__(self):
         self.value = None
         
     def set(self, value):
         self.value = value
         
-    def stdout(self, value):
+    def get(self, value):
         print(self.value)
 
+# example
 class_name = ClassName()
 class_name.set('HelloWorld')
-class_name.stdout() # HelloWorld
+value = class_name.get()
+print(value) # HelloWorld
 ```
 
 ---
