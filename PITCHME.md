@@ -17,11 +17,9 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 ---
 
-### ∑(ﾟДﾟ)
+### むむむずかしい ∑(ﾟДﾟ)
 とりあえず実物を見てみよう
 ---
-
-### 基本系
 
 ```python
 
