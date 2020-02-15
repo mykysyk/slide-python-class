@@ -38,6 +38,7 @@ https://docs.python.org/ja/3/tutorial/classes.html
 1. お釣りを確認しよう
 1. 領収書を発行
 
+---
 
 ### 先ほどの機能をプログラムで使いやすい名前に変更してみる
 
