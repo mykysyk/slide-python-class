@@ -88,7 +88,7 @@ class FirstFoodSystem:
 
 ### 利用方法 1
 
-```mcdonalds.py
+```python
 mcdonalds = FirstFoodSystem()
 mcdonalds.set_menu(menu_dict)
 mcdonalds.set_order('ハンバーガー')
@@ -103,7 +103,7 @@ mcdonalds.get_receipt()
 ---
 ### 利用方法 2
 
-```yoshinoya.py
+```python
 yoshinoya = FirstFoodSystem()
 yoshinoya.set_menu(menu_dict)
 yoshinoya.set_order('牛丼並')
