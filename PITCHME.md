@@ -55,33 +55,26 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 ---
 
+### Pythonのお作法に従うと
 
-### 並べてみる
+クラスの原型完成
 
-```text
-FirstFoodSystem
-    set_menu
-    set_order
-    get_order
-    get_total_price
-    set_deposit
-    get_change
-    get_receipt
-```
-
----
-
-### Pythonのお作法に従うとクラスの原型完成
-
-```
+```python
 class FirstFoodSystem:
     def set_menu(self, menu):
+        self.menu = menu
     def set_order(self, order):
+        self.order = order
     def get_order(self):
+        pass
     def get_total_price(self):
+        pass
     def set_deposit(self, deposit):
+         self.deposit
     def get_change(self):
+        pass
     def get_receipt(self):
+        pass
 ```
 
 ---
