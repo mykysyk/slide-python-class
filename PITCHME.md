@@ -6,7 +6,7 @@
 9. クラス — Python 3.8.2rc1 ドキュメント
 https://docs.python.org/ja/3/tutorial/classes.html
 
-```
+```txt
 クラスはデータと機能を組み合わせる方法を提供します。 
 新規にクラスを作成することで、新しいオブジェクトの 型 を作成し、その型を持つ新しい インスタンス が作れます。 
 クラスのそれぞれのインスタンスは自身の状態を保持する属性を持てます。 
@@ -39,9 +39,8 @@ https://docs.python.org/ja/3/tutorial/classes.html
 1. お金を受領しよう
 1. お釣りを確認しよう
 1. 領収書を発行
----
 
-### プログラムにしやすいように名前をつけてみよう
+---
 
 |変更前                |変更後 |
 |--                   |-- |--- |
@@ -59,7 +58,7 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 ### 並べてみる
 
-```
+```text
 FirstFoodSystem
     set_menu
     set_order
