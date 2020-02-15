@@ -20,14 +20,11 @@ https://docs.python.org/ja/3/tutorial/classes.html
 ### ∑(ﾟДﾟ)
 ---
 
-### 習うより慣れてみるのが一番
----
-
 ### 基本系
 
 ```python
 
-class ClassName:
+class ClassName:                # クラス名 (クラスの名前は CapWords 方式)
     COUNTER = 0                 # クラス変数 (すべてのインスタンスで共有して使う属性)
     def __init__(self):         # コンストラクタ
         self.value = None       # インスタンス変数 (そのインスタンスだけで使う属性)
@@ -46,6 +43,10 @@ value = class_name.get()        # class_name.value の値を取得
 print(value)                    # HelloWorld が 出力される
 ```
 
+https://pep8-ja.readthedocs.io/ja/latest/
+---
+
+### 習うより慣れてみるのが一番
 ---
 
 ### お題
