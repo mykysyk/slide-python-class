@@ -56,7 +56,7 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 ---
 
-### プログラムのソースコードに落としてみる
+### ソースコードに落としてみる
 
 ```python
 class FirstFoodSystem:
