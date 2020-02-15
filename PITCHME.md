@@ -6,24 +6,28 @@
 9. クラス — Python 3.8.2rc1 ドキュメント
 https://docs.python.org/ja/3/tutorial/classes.html
 
+```
 クラスはデータと機能を組み合わせる方法を提供します。 
 新規にクラスを作成することで、新しいオブジェクトの 型 を作成し、その型を持つ新しい インスタンス が作れます。 
 クラスのそれぞれのインスタンスは自身の状態を保持する属性を持てます。 
 クラスのインスタンスは、その状態を変更するための (そのクラスが定義する) メソッドも持てます。
+``
+
 ---
 
 ### ∑(ﾟДﾟ)
 ---
 
-### とりあえずやってみよう
+### 習うより慣れてみるのが一番
 ---
 
-### ファーストフードのレジシステムを作ろう
+### お題
+ファーストフードのレジシステムをクラスで作ろう
 ---
 
 ### まずなにが必要？
 
-ファーストフードレジシステムに必要な機能を上げてみよう
+ファーストフードレジシステムに必要な機能
 ---
 
 ### ファーストフードレジシステムに必要な機能
@@ -39,17 +43,21 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 ### プログラムにしやすいように名前をつけてみよう
 
-ファーストフードレジシステム -> FirstFoodSystem
-1. メニューを登録 -> set_menu
-1. 注文を登録 -> set_order
-1. 注文を確認 -> get_order
-1. 注文の合計金額を確認 -> get_total_price
-1. お金を受領しよう -> set_money
-1. お釣りを確認しよう -> get_change
-1. 領収書を発行 -> get_receipt
+|変更前                |変更後 |
+|--                   |-- |--- |
+| ファーストフードレジシステム | FirstFoodSystem | 
+| メニューを登録          | set_menu |
+| 注文を登録            | set_order |
+| 注文を確認            | get_order |
+| 注文の合計金額を確認    | get_total_price |
+| お金を受領しよう        | set_deposit |
+| お釣りを確認しよう       | get_change |
+| 領収書を発行          | get_receipt |
+
 ---
 
-### 日本語を排除
+
+### 並べてみる
 
 ```
 FirstFoodSystem
@@ -57,7 +65,7 @@ FirstFoodSystem
     set_order
     get_order
     get_total_price
-    set_money
+    set_deposit
     get_change
     get_receipt
 ```
@@ -69,10 +77,10 @@ FirstFoodSystem
 ```
 class FirstFoodSystem:
     def set_menu(self, menu):
-    def get_order(self, order):
+    def set_order(self, order):
     def get_order(self):
     def get_total_price(self):
-    def set_money(self,mony):
+    def set_deposit(self, deposit):
     def get_change(self):
     def get_receipt(self):
 ```
@@ -81,24 +89,38 @@ class FirstFoodSystem:
 
 ### 肉付け
 
-```
-class FirstFoodSystem:
-    def set_menu(self, menu):
-        
-    def get_order(self, order):
-    
-    def get_order(self):
-    
-    def get_total_price(self):
-    
-    def set_money(self,mony):
-    
-    def get_change(self):
-    
-    def get_receipt(self):
-```
 
 ---
+
+### 利用方法 1
+
+```
+mcdonalds = FirstFoodSystem()
+mcdonalds.set_menu(menu_dict)
+mcdonalds.set_order('ハンバーガー')
+mcdonalds.set_order('ポテト')
+mcdonalds.set_order('コーラー')
+mcdonalds.get_order()
+mcdonalds.get_total_price()  # 300
+mcdonalds.set_deposit(500)
+mcdonalds.get_change()       # 200
+mcdonalds.get_receipt()
+```
+---
+### 利用方法 2
+
+```
+yoshinoya = FirstFoodSystem()
+yoshinoya.set_menu(menu_dict)
+yoshinoya.set_order('牛丼並')
+yoshinoya.set_order('牛丼並')
+yoshinoya.get_order()
+yoshinoya.get_total_price()  # 300
+yoshinoya.set_deposit(500)
+yoshinoya.get_change()       # 200
+yoshinoya.get_receipt()
+```
+
 
 
 ### おわり
