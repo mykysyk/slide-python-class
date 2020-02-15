@@ -91,39 +91,42 @@ class FastFoodSystem:
 
 ---
 
+### 利用想定
+
+```python
+menu_dict = {'コーラー': 100, 'ハンバーガー': 110, 'ポテト': 100}
+mc = FirstFoodSystem()
+mc.set_menu(menu_dict)
+mc.set_order('ハンバーガー')
+mc.set_order('ポテト')
+mc.set_order('コーラー')
+mc.get_order()        # ['ハンバーガー', 'ポテト', 'コーラー']
+mc.get_total_price()  # 310
+mc.set_deposit(500)
+mc.get_change()       # 190
+
+```
+---
+
+
+```text
+mc.get_receipt()
+
+=== 領収書 ===
+
+--------------------------------------------------
+ハンバーガー
+ポテト
+コーラー
+--------------------------------------------------
+合計請求金額: 500円
+お預かり金額: 1000円
+お釣り      : 500円
+--------------------------------------------------
+```
+---
+
 ### 肉付け
-
-
----
-
-### 利用方法 1
-
-```python
-mcdonalds = FirstFoodSystem()
-mcdonalds.set_menu(menu_dict)
-mcdonalds.set_order('ハンバーガー')
-mcdonalds.set_order('ポテト')
-mcdonalds.set_order('コーラー')
-mcdonalds.get_order()        # ['ハンバーガー', 'ポテト', 'コーラー']
-mcdonalds.get_total_price()  # 500
-mcdonalds.set_deposit(1000)
-mcdonalds.get_change()       # 500
-mcdonalds.get_receipt()
-```
----
-### 利用方法 2
-
-```python
-yoshinoya = FirstFoodSystem()
-yoshinoya.set_menu(menu_dict)
-yoshinoya.set_order('牛丼並')
-yoshinoya.set_order('牛丼並')
-yoshinoya.get_order()
-yoshinoya.get_total_price()  # 300
-yoshinoya.set_deposit(500)
-yoshinoya.get_change()       # 200
-yoshinoya.get_receipt()
-```
 
 
 ---
