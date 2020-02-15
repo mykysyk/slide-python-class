@@ -163,6 +163,7 @@ mc.get_receipt()
 
 ### 肉付け
 
+https://github.com/mykysyk/slide-test/blob/master/fastfoodsystem.py
 
 ---
 
