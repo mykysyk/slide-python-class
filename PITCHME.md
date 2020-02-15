@@ -28,20 +28,22 @@ https://docs.python.org/ja/3/tutorial/classes.html
 ```python
 
 class ClassName:
-    def __init__(self):
-        self.value = None
+    COUNTER = 0                 # クラス変数 (すべてのインスタンスで共有して使う属性)
+    def __init__(self):         # コンストラクタ
+        self.value = None       # インスタンス変数 (そのインスタンスだけで使う属性)
         
-    def set(self, value):
+    def set(self, value):       # メソッド
         self.value = value
+        ClassName.COUNTER += 1
         
-    def get(self, value):
-        print(self.value)
+    def get(self):              # メソッド
+        return self.value
 
 # example
-class_name = ClassName()
-class_name.set('HelloWorld')
-value = class_name.get()
-print(value) # HelloWorld
+class_name = ClassName()        # クラスのインスタンスを生成
+class_name.set('HelloWorld')    # class_name.value に HelloWorld がセットされる
+value = class_name.get()        # class_name.value の値を取得
+print(value)                    # HelloWorld が 出力される
 ```
 
 ---
