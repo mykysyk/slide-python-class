@@ -1,7 +1,7 @@
 ### Pythonのクラスを書こう
 ---
 
-### 公式サイトを読んでみよう。
+### 公式ドキュメント
 
 #### 9. クラス — Python 3.8.2rc1 ドキュメント
 
@@ -36,6 +36,18 @@ class ClassName:
     def get(self):
         return self.value
 ```
+
+---
+
+- class ClassName: |
+-    def __init__(self): |
+-        self.value = None |
+-    def set(self, value): |
+-        self.value = value |
+-    def get(self): |
+-        return self.value |
+
+
 
 #### クラスの作成
 
