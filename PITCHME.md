@@ -18,7 +18,7 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 ---
 
-### 簡単なクラスの作成
+### 簡単なクラスを作成
 
 ---
 
@@ -67,14 +67,11 @@ value = instance_name.get()
 print(value)
 ```
 
+@[12-15](クラスを実際に使う)
 @[12](クラスのインスタンスを生成)
 @[13](インスタンス変数 value に HelloWorld がセットされる)
 @[14](インスタンス変数 value の値を取得)
 @[15](HelloWorld が 出力される)
-
----
-
-### ∑(ﾟДﾟ)
 
 ---
 
