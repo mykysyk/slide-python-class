@@ -1,4 +1,5 @@
 ### Pythonのクラスを書こう
+
 ---
 
 ### 公式ドキュメント
@@ -17,11 +18,11 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 ---
 
-#### 簡単なクラスの作成
-
-値をセットしてその値を出力するだけの簡単なクラス
+### 簡単なクラスの作成
 
 ---
+
+### 値をセットしてその値を出力するだけの簡単なクラス
 
 ```python
 class ClassName:
@@ -43,35 +44,22 @@ class ClassName:
 @[6-7](インスタンス変数に値をセットするメソッド)
 @[9-10](インスタンス変数から値を取得するメソッド)
 @[3-4](コンストラクタ：クラスのインスタンスが生成された際に呼び出される)
----
-
-
-#### クラスの作成
-
-値をセットしてその値を出力するだけの簡単なクラス
-
-```python
-class ClassName:                # クラス名 (クラスの名前は CapWords 方式)
-
-    def __init__(self):         # コンストラクタ (クラスのインスタンスが生成された際に呼び出される)
-        self.value = None       # インスタンス変数 (そのインスタンスだけで使う属性)
-        
-    def set(self, value):       # メソッド
-        self.value = value
-        
-    def get(self):              # メソッド
-        return self.value
-```
 
 ---
+
 #### クラスの使い方 
 
-```
+```python
 instance_name = ClassName()     # クラスのインスタンスを生成
 instance_name.set('HelloWorld') # class_name.value に HelloWorld がセットされる
 value = instance_name.get()     # class_name.value の値を取得
 print(value)                    # HelloWorld が 出力される
 ```
+
+@[1](クラスのインスタンスを生成)
+@[2](インスタンス変数 value に HelloWorld がセットされる)
+@[3](インスタンス変数 value の値を取得)
+@[4](HelloWorld が 出力される)
 
 ---
 
@@ -175,19 +163,10 @@ mc.get_receipt()
 
 
 ```
-
-
-=== 領収書 ===
-
---------------------------------------------------
-ハンバーガー
-ポテト
-コーラー
---------------------------------------------------
-合計請求金額: 310円
-お預かり金額:  500円
-お釣り      : 190円
---------------------------------------------------
+{'change': 500,
+ 'deposit': 1000,
+ 'order_list': ['ハンバーガー', 'ポテト', 'コーラー'],
+ 'total_price': 500}
 ```
 
 ---
