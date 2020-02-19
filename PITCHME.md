@@ -66,8 +66,8 @@ instance_name.set('HelloWorld')
 value = instance_name.get()
 print(value)
 ```
-
-@[12-15](クラスを実際に使う)
+@[1-10](先ほど作成したクラス)
+@[12-15](呼び出して使ってみる)
 @[12](クラスのインスタンスを生成)
 @[13](インスタンス変数 value に HelloWorld がセットされる)
 @[14](インスタンス変数 value の値を取得)
