@@ -37,16 +37,14 @@ class ClassName:
         return self.value
 ```
 
+
+@[1](クラス名を定義 クラスの名前は CapWords 方式で記述します)
+@[3](コンストラクタ クラスのインスタンスが生成された際に呼び出される)
+@[4](インスタンス変数 そのインスタンスだけで使う属性)
+@[6-7](データをセットするメソッド)
+@[9-10](データを出力するメソッド)
+
 ---
-
-- class ClassName: |
--    def __init__(self): |
--        self.value = None |
--    def set(self, value): |
--        self.value = value |
--    def get(self): |
--        return self.value |
-
 
 
 #### クラスの作成
@@ -54,7 +52,6 @@ class ClassName:
 値をセットしてその値を出力するだけの簡単なクラス
 
 ```python
-
 class ClassName:                # クラス名 (クラスの名前は CapWords 方式)
 
     def __init__(self):         # コンストラクタ (クラスのインスタンスが生成された際に呼び出される)
@@ -67,6 +64,7 @@ class ClassName:                # クラス名 (クラスの名前は CapWords �
         return self.value
 ```
 
+---
 #### クラスの使い方 
 
 ```
