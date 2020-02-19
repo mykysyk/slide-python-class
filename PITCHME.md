@@ -39,8 +39,8 @@ class ClassName:
 
 @[1](クラス名：class文の後にそのクラスの名前を付けます)
 @[6,9](メソッド：「def」に続けてメソッド名を記述、第一引数に必ずselfを記述)
-@[4,７,10](インスタンス変数: 「self.」を変数名の前に記述)
-@[4,７,10](インスタンス変数: 「そのインスタンスだけで使う属性)
+@[4,７](インスタンス変数: 「self.」を変数名の前に記述)
+@[4,７](インスタンス変数: そのインスタンスだけで使う属性)
 @[6-7](インスタンス変数に値をセットするメソッド)
 @[9-10](インスタンス変数から値を取得するメソッド)
 @[3-4](コンストラクタ：クラスのインスタンスが生成された際に呼び出される)
@@ -50,10 +50,23 @@ class ClassName:
 #### クラスの使い方 
 
 ```python
-instance_name = ClassName()     # クラスのインスタンスを生成
-instance_name.set('HelloWorld') # class_name.value に HelloWorld がセットされる
-value = instance_name.get()     # class_name.value の値を取得
-print(value)                    # HelloWorld が 出力される
+class ClassName:
+
+    def __init__(self):
+        self.value = None
+
+    def set(self, value):
+        self.value = value
+
+    def get(self):
+        return self.value
+```
+
+```python
+instance_name = ClassName()
+instance_name.set('HelloWorld')
+value = instance_name.get()
+print(value)
 ```
 
 @[1](クラスのインスタンスを生成)
