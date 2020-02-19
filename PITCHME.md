@@ -24,7 +24,6 @@ https://docs.python.org/ja/3/tutorial/classes.html
 ---
 
 ```python
-
 class ClassName:
 
     def __init__(self):
