@@ -17,9 +17,11 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 ---
 
-#### クラスの作成
+#### 簡単なクラスの作成
 
 値をセットしてその値を出力するだけの簡単なクラス
+
+---
 
 ```python
 
@@ -34,17 +36,6 @@ class ClassName:
     def get(self):
         return self.value
 ```
-
-#### クラスの使い方
-
-```
-instance_name = ClassName()
-instance_name.set('HelloWorld')
-value = instance_name.get()
-print(value)
-```
-
----
 
 #### クラスの作成
 
