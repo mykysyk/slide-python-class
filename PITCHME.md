@@ -17,9 +17,8 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 ---
 
-### むむむずかしい ∑(ﾟДﾟ)
-とりあえず実物を見てみよう
----
+#### クラスの作成
+値をセットしてその値を出力するだけの簡単なクラス
 
 ```python
 
@@ -27,20 +26,27 @@ class ClassName:
 
     def __init__(self):
         self.value = None
-        
+
     def set(self, value):
         self.value = value
-        
+
     def get(self):
         return self.value
+```
 
-# example
+#### クラスの使い方
+
+```
 instance_name = ClassName()
 instance_name.set('HelloWorld')
 value = instance_name.get()
 print(value)
 ```
+
 ---
+
+#### クラスの作成
+値をセットしてその値を出力するだけの簡単なクラス
 
 ```python
 
@@ -54,21 +60,26 @@ class ClassName:                # クラス名 (クラスの名前は CapWords �
         
     def get(self):              # メソッド
         return self.value
+```
 
-# example
+
+#### クラスの使い方 
+
+```
 instance_name = ClassName()     # クラスのインスタンスを生成
 instance_name.set('HelloWorld') # class_name.value に HelloWorld がセットされる
 value = instance_name.get()     # class_name.value の値を取得
 print(value)                    # HelloWorld が 出力される
 ```
 
-https://pep8-ja.readthedocs.io/ja/latest/
 ---
 
 ### ∑(ﾟДﾟ)
+
 ---
 
 ### 習うより慣れてみるのが一番
+
 ---
 
 ### お題
