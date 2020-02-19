@@ -23,22 +23,42 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 ```python
 
+class ClassName:
+
+    def __init__(self):
+        self.value = None
+        
+    def set(self, value):
+        self.value = value
+        
+    def get(self):
+        return self.value
+
+# example
+instance_name = ClassName()
+instance_name.set('HelloWorld')
+value = instance_name.get()
+print(value)
+```
+---
+
+```python
+
 class ClassName:                # クラス名 (クラスの名前は CapWords 方式)
-    COUNTER = 0                 # クラス変数 (すべてのインスタンスで共有して使う属性)
+
     def __init__(self):         # コンストラクタ (クラスのインスタンスが生成された際に呼び出される)
         self.value = None       # インスタンス変数 (そのインスタンスだけで使う属性)
         
     def set(self, value):       # メソッド
         self.value = value
-        ClassName.COUNTER += 1
         
     def get(self):              # メソッド
         return self.value
 
 # example
-class_name = ClassName()        # クラスのインスタンスを生成
-class_name.set('HelloWorld')    # class_name.value に HelloWorld がセットされる
-value = class_name.get()        # class_name.value の値を取得
+instance_name = ClassName()     # クラスのインスタンスを生成
+instance_name.set('HelloWorld') # class_name.value に HelloWorld がセットされる
+value = instance_name.get()     # class_name.value の値を取得
 print(value)                    # HelloWorld が 出力される
 ```
 
