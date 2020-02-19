@@ -60,19 +60,17 @@ class ClassName:
 
     def get(self):
         return self.value
-```
 
-```python
 instance_name = ClassName()
 instance_name.set('HelloWorld')
 value = instance_name.get()
 print(value)
 ```
 
-@[1](クラスのインスタンスを生成)
-@[2](インスタンス変数 value に HelloWorld がセットされる)
-@[3](インスタンス変数 value の値を取得)
-@[4](HelloWorld が 出力される)
+@[12](クラスのインスタンスを生成)
+@[13](インスタンス変数 value に HelloWorld がセットされる)
+@[14](インスタンス変数 value の値を取得)
+@[15](HelloWorld が 出力される)
 
 ---
 
