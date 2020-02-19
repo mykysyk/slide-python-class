@@ -1,3 +1,5 @@
+# coding: utf-8
+
 class FastFoodSystem:
     """ ファーストフードレジシステム
     """
@@ -83,6 +85,9 @@ class FastFoodSystem:
 
 
 def sample():
+
+    from pprint import pprint
+
     MENU_DICT = {
         'ハンバーガー': 110,
         'ポテト' : 290,
@@ -101,22 +106,8 @@ def sample():
     mc.set_deposit(1000)                # お金を受領しよう
     change = mc.get_change()            # 釣りを確認しよう
     print('お釣りを確認: {}'.format(change))
-    sample_output(mc.get_receipt())     # 領収書を発行
-
-def sample_output(receipt):
-    print('')
-    print('---------- キリトリ ----------')
-    print('')
-    print('=== 領収書 ===')
-    print('')
-    print('-' * 50)
-    for order in receipt['order_list']:
-        print(order)
-    print('-' * 50)
-    print('合計請求金額: {}円'.format(receipt['total_price']))
-    print('お預かり金額: {}円'.format(receipt['deposit']))
-    print('お釣り      : {}円'.format(receipt['change']))
-    print('-' * 50)
+    receipt = mc.get_receipt()          # 領収書を発行
+    pprint(receipt)
 
 if __name__ == '__main__':
     sample()
