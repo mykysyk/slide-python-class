@@ -87,27 +87,24 @@ class FastFoodSystem:
 def sample():
 
     from pprint import pprint
-
-    MENU_DICT = {
-        'ハンバーガー': 110,
-        'ポテト' : 290,
-        'コーラー': 100
-        }
-
-    mc = FastFoodSystem()
-    mc.set_menu(MENU_DICT)              # メニューを登録
-    mc.set_order('ハンバーガー')        # 注文を登録
-    mc.set_order('ポテト')              # 注文を登録
-    mc.set_order('コーラー')            # 注文を登録
-    order = mc.get_order()              # 注文を確認
-    print('注文を確認: {}'.format(order))
-    total_price = mc.get_total_price()  # 注文の合計金額を確認
-    print('注文の合計金額を確認: {}'.format(total_price))
-    mc.set_deposit(1000)                # お金を受領しよう
-    change = mc.get_change()            # 釣りを確認しよう
-    print('お釣りを確認: {}'.format(change))
-    receipt = mc.get_receipt()          # 領収書を発行
-    pprint(receipt)
+    menu_dict = {'コーラー': 100, 'ハンバーガー': 110, 'ポテト': 100}
+    macdonald = FastFoodSystem()
+    macdonald.set_menu(menu_dict)
+    macdonald.set_order('ハンバーガー')
+    macdonald.set_order('ポテト')
+    macdonald.set_order('コーラー')
+    order = macdonald.get_order()
+    print(order)                        # ['ハンバーガー', 'ポテト', 'コーラー']
+    total_price = macdonald.get_total_price()
+    print(total_price)                 # 310
+    macdonald.set_deposit(500)
+    change = macdonald.get_change()
+    print(change)                       # 190
+    receipt = macdonald.get_receipt()
+    print(receipt)                      # {'change': 190,
+                                        #  'deposit': 500,
+                                        #  'order_list': ['ハンバーガー', 'ポテト', 'コーラー'],
+                                        #  'total_price': 310}
 
 if __name__ == '__main__':
     sample()
