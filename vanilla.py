@@ -5,21 +5,27 @@ class FastFoodSystem:
     def set_menu(self, menu):
         """ メニューを登録 """
         pass
+    
     def set_order(self, order):
         """ 注文を登録 """
         pass
+    
     def get_order(self):
         """ 注文を確認 """
         pass
+    
     def get_total_price(self):
         """ 注文の合計金額を確認 """
         pass
+    
     def set_deposit(self, deposit):
         """ お金を受領しよう """
         pass
+    
     def get_change(self):
         """ お釣りを確認しよう """
         pass
+    
     def get_receipt(self):
         """ 領収書を発行 """
         pass
