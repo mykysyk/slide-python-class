@@ -22,12 +22,16 @@ class FastFoodSystem:
         pass
       
 menu_dict = {'コーラー': 100, 'ハンバーガー': 110, 'ポテト': 100}
-mc = FastFoodSystem()
-mc.set_menu(menu_dict)
-mc.set_order('ハンバーガー')
-mc.set_order('ポテト')
-mc.set_order('コーラー')
-mc.get_order()        # ['ハンバーガー', 'ポテト', 'コーラー']
-mc.get_total_price()  # 310
-mc.set_deposit(500)
-mc.get_change()       # 190
+macdonald = FastFoodSystem()
+macdonald.set_menu(menu_dict)
+macdonald.set_order('ハンバーガー')
+macdonald.set_order('ポテト')
+macdonald.set_order('コーラー')
+macdonald.get_order()        # ['ハンバーガー', 'ポテト', 'コーラー']
+macdonald.get_total_price()  # 310
+macdonald.set_deposit(500)
+macdonald.get_change()       # 190
+macdonald.get_receipt()      # {'change': 190,
+                             #  'deposit': 500,
+                             #  'order_list': ['ハンバーガー', 'ポテト', 'コーラー'],
+                             #  'total_price': 310}
