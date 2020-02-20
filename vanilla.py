@@ -1,3 +1,5 @@
+# coding: utf-8
+
 class FastFoodSystem:
     def set_menu(self, menu):
         """ メニューを登録 """
