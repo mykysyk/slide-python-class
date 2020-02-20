@@ -30,9 +30,8 @@ class FastFoodSystem:
         """ 領収書を発行 """
         pass
 
-menu_dict = {'コーラー': 100, 'ハンバーガー': 110, 'ポテト': 100}
 macdonald = FastFoodSystem()
-macdonald.set_menu(menu_dict)
+macdonald.set_menu({'コーラー': 100, 'ハンバーガー': 110, 'ポテト': 100})
 macdonald.set_order('ハンバーガー')
 macdonald.set_order('ポテト')
 macdonald.set_order('コーラー')
