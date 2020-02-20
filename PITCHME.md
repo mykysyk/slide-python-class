@@ -174,14 +174,18 @@ macdonald.set_menu(menu_dict)
 macdonald.set_order('ハンバーガー')
 macdonald.set_order('ポテト')
 macdonald.set_order('コーラー')
-macdonald.get_order()        # ['ハンバーガー', 'ポテト', 'コーラー']
-macdonald.get_total_price()  # 310
+order = macdonald.get_order()
+print(order)                        # ['ハンバーガー', 'ポテト', 'コーラー']
+total_price = macdonald.get_total_price()
+print(total_price)                 # 310
 macdonald.set_deposit(500)
-macdonald.get_change()       # 190
-macdonald.get_receipt()      # {'change': 190,
-                             #  'deposit': 500,
-                             #  'order_list': ['ハンバーガー', 'ポテト', 'コーラー'],
-                             #  'total_price': 310}
+change = macdonald.get_change()
+print(change)                       # 190
+receipt = macdonald.get_receipt()
+print(receipt)                      # {'change': 190,
+                                    #  'deposit': 500,
+                                    #  'order_list': ['ハンバーガー', 'ポテト', 'コーラー'],
+                                    #  'total_price': 310}
 ```
 
 ---
