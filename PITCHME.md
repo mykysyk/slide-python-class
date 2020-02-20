@@ -22,7 +22,7 @@ https://docs.python.org/ja/3/tutorial/classes.html
 
 ---
 
-### 値を入出力するだけの簡単なクラス
+### 値を入出力するだけのクラス
 
 ```python
 class ClassName:
@@ -123,6 +123,7 @@ print(value)
 
 ```python
 class FastFoodSystem:
+    """ ファーストフードレジシステム """
     def set_menu(self, menu):
         """ メニューを登録 """
         pass
@@ -145,6 +146,10 @@ class FastFoodSystem:
         """ 領収書を発行 """
         pass
 ```
+@[2,4,7,10,13,16,19](日本語名)
+@[1,3,6,9,12,15,18](英語名)
+@[4,7,10,13,16,19](pass：なにもしない)
+
 ---
 
 ### ٩(ˊᗜˋ*)و 
