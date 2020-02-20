@@ -85,8 +85,6 @@ class FastFoodSystem:
 
 
 def sample():
-
-    from pprint import pprint
     menu_dict = {'コーラー': 100, 'ハンバーガー': 110, 'ポテト': 100}
     macdonald = FastFoodSystem()
     macdonald.set_menu(menu_dict)
