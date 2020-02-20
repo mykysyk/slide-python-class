@@ -100,7 +100,7 @@ print(value)
 
 ---
 
-### 先ほどの必要な機能をプログラムぽい名前に変更してみる
+### 必要な機能に名前を付ける
 
 ---
 
@@ -117,7 +117,7 @@ print(value)
 
 ---
 
-### ソースコードに落としてみる
+### クラスを作成してみる
 
 ---
 
@@ -148,47 +148,62 @@ class FastFoodSystem:
 ```
 @[2,4,7,10,13,16,19](日本語名)
 @[1,3,6,9,12,15,18](英語名)
-@[4,7,10,13,16,19](pass：なにもしない)
+@[5,8,11,14,17,20](pass：なにもしない)
+@[1-20](これだけでクラスができちゃう)
 
 ---
 
-### ٩(ˊᗜˋ*)و 
+### では実際に肉付けしてみよう٩(ˊᗜˋ*)و 
 
+```python
+class FastFoodSystem:
+    """ ファーストフードレジシステム """
+    def set_menu(self, menu):
+        """ メニューを登録 """
+        pass
+    def set_order(self, order):
+        """ 注文を登録 """
+        pass
+    def get_order(self):
+        """ 注文を確認 """
+        pass
+    def get_total_price(self):
+        """ 注文の合計金額を確認 """
+        pass
+    def set_deposit(self, deposit):
+        """ お金を受領しよう """
+        pass
+    def get_change(self):
+        """ お釣りを確認しよう """
+        pass
+    def get_receipt(self):
+        """ 領収書を発行 """
+        pass
+```
 ---
 
 ### 利用想定
 
 ```python
 menu_dict = {'コーラー': 100, 'ハンバーガー': 110, 'ポテト': 100}
-mc = FastFoodSystem()
-mc.set_menu(menu_dict)
-mc.set_order('ハンバーガー')
-mc.set_order('ポテト')
-mc.set_order('コーラー')
-mc.get_order()        # ['ハンバーガー', 'ポテト', 'コーラー']
-mc.get_total_price()  # 310
-mc.set_deposit(500)
-mc.get_change()       # 190
+macdonald = FastFoodSystem()
+macdonald.set_menu(menu_dict)
+macdonald.set_order('ハンバーガー')
+macdonald.set_order('ポテト')
+macdonald.set_order('コーラー')
+macdonald.get_order()        # ['ハンバーガー', 'ポテト', 'コーラー']
+macdonald.get_total_price()  # 310
+macdonald.set_deposit(500)
+macdonald.get_change()       # 190
+macdonald.get_receipt()      #{'change': 190,
+                               'deposit': 500,
+                               'order_list': ['ハンバーガー', 'ポテト', 'コーラー'],
+                               'total_price': 310}
 
 ```
 ---
 
-
-```python
-mc.get_receipt()
-```
-
-
-```
-{'change': 500,
- 'deposit': 1000,
- 'order_list': ['ハンバーガー', 'ポテト', 'コーラー'],
- 'total_price': 500}
-```
-
----
-
-### 肉付け
+### 実例
 
 https://github.com/mykysyk/slide-test/blob/master/fastfoodsystem.py
 
