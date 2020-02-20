@@ -175,8 +175,6 @@ class FastFoodSystem:
 
 ---
 
-### 呼び出し側
-
 このプログラムが実行できたらOK
 
 ```python
@@ -186,6 +184,7 @@ macdonald.set_menu(menu_dict)
 macdonald.set_order('ハンバーガー')
 macdonald.set_order('ポテト')
 macdonald.set_order('コーラー')
+macdonald.set_order('モスバーガー')
 order = macdonald.get_order()
 print(order)                        # ['ハンバーガー', 'ポテト', 'コーラー']
 total_price = macdonald.get_total_price()
