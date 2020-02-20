@@ -92,13 +92,14 @@ print(value)
 
 ---
 
-### 実際に作ってみよう
+### もうすこし複雑なクラスを作る
 
 ---
 
 ### お題
 
 ファーストフードのレジシステム
+
 ---
 
 ### レジシステムに必要な機能
@@ -173,9 +174,8 @@ class FastFoodSystem:
 このプログラムが実行できたらOK
 
 ```python
-menu_dict = {'コーラー': 100, 'ハンバーガー': 110, 'ポテト': 100}
 macdonald = FastFoodSystem()
-macdonald.set_menu(menu_dict)
+macdonald.set_menu({'コーラー': 100, 'ハンバーガー': 110, 'ポテト': 100})
 macdonald.set_order('ハンバーガー')
 macdonald.set_order('ポテト')
 macdonald.set_order('コーラー')
