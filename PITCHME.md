@@ -153,35 +153,6 @@ class FastFoodSystem:
 
 ---
 
-### では実際に肉付けしてみよう٩(ˊᗜˋ*)و 
-
-```python
-class FastFoodSystem:
-    """ ファーストフードレジシステム """
-    def set_menu(self, menu):
-        """ メニューを登録 """
-        pass
-    def set_order(self, order):
-        """ 注文を登録 """
-        pass
-    def get_order(self):
-        """ 注文を確認 """
-        pass
-    def get_total_price(self):
-        """ 注文の合計金額を確認 """
-        pass
-    def set_deposit(self, deposit):
-        """ お金を受領しよう """
-        pass
-    def get_change(self):
-        """ お釣りを確認しよう """
-        pass
-    def get_receipt(self):
-        """ 領収書を発行 """
-        pass
-```
----
-
 ### 利用想定
 
 ```python
@@ -195,17 +166,22 @@ macdonald.get_order()        # ['ハンバーガー', 'ポテト', 'コーラー
 macdonald.get_total_price()  # 310
 macdonald.set_deposit(500)
 macdonald.get_change()       # 190
-macdonald.get_receipt()      #{'change': 190,
-                               'deposit': 500,
-                               'order_list': ['ハンバーガー', 'ポテト', 'コーラー'],
-                               'total_price': 310}
+macdonald.get_receipt()      # {'change': 190,
+                             #  'deposit': 500,
+                             #  'order_list': ['ハンバーガー', 'ポテト', 'コーラー'],
+                             #  'total_price': 310}
 
 ```
+### では実際に肉付けしてみよう٩(ˊᗜˋ*)و 
+
+ここにソースがあるよ！
+https://raw.githubusercontent.com/mykysyk/slide-python-class/master/vanilla.py 
+
 ---
 
 ### 実例
 
-https://github.com/mykysyk/slide-test/blob/master/fastfoodsystem.py
+https://github.com/mykysyk/slide-python-class/blob/master/fastfoodsystem.py
 
 ---
 
