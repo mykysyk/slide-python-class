@@ -86,8 +86,7 @@ print(value)
 @[15](instance_name.get\(\) を使うと)
 @[9-11,15](クラス側ではこちらが実行され)
 @[9-11,15](self.value と result の "!!" が結合され)
-@[9-11,15](「HelloWorld!!」 を返します)
-@[16](「HelloWorld！！」 が 出力される)
+@[9-11,15,16](「HelloWorld!!」 を返します)
 @[1-16]()
 
 ---
