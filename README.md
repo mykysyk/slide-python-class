@@ -1,1 +1,1 @@
-https://gitpitch.com/mykysyk/slide-test
+https://gitpitch.com/mykysyk/slide-python-class
