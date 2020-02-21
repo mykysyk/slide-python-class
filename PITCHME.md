@@ -296,18 +296,28 @@ https://raw.githubusercontent.com/mykysyk/slide-python-class/master/vanilla.py
 
 ---
 
+set_menu 
+
 ```
     """ ファーストフードレジシステム """
     def set_menu(self, menu):
         """ メニューを登録 """
         pass
+```
 
+@[4](「pass」を削除して)
+
+---
+
+set_menu
+
+```
     """ ファーストフードレジシステム """
     def set_menu(self, menu):
         """ メニューを登録 """
         self.menu_dict = menu
 ```
-@[4](「pass」を削除して)
+
 @[4](「self.menu_dict = menu」を追加)
 
 ---
