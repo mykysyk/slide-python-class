@@ -468,59 +468,6 @@ https://raw.githubusercontent.com/mykysyk/slide-python-class/master/vanilla.py
 
 ---
 
-set_menu 
-
-```python
-class FastFoodSystem:
-    """ ファーストフードレジシステム """
-    
-    def set_menu(self, menu):
-        """ メニューを登録 """
-        self.menu_dict = menu
-        
-    def set_order(self, order):
-        """ 注文を登録 """
-        pass
-        
-    def get_order(self):
-        """ 注文を確認 """
-        pass
-```
-
-@[4](set_menuメソッドは辞書型のメニューを登録するので)
-@[6](「pass」を取り除き、「self.menu_dict」に登録できるようにする)
-
----
-
-```python
-class FastFoodSystem:
-    """ ファーストフードレジシステム """
-    
-    def __init__(self):
-        self.order_list = []
-        
-    def set_menu(self, menu):
-        """ メニューを登録 """
-        self.menu_dict = menu
-        
-    def set_order(self, order):
-        """ 注文を登録 """
-        if order in self.menu_dict:
-            self.order_list.append(order)
-        
-    def get_order(self):
-        """ 注文を確認 """
-        pass
-```
-
-@[13](注文商品がメニューにあるときだけ)
-@[13-14](「注文リスト」に追加できるようにする)
-@[14](しかし「注文リスト」は宣言されていないためエラーとなるので)
-@[4,5](特殊メソッドの「\__\init\_\_」を作成し)
-@[4,5](「注文リスト」を配列で初期化させる)
-
----
-
 ```python
 class FastFoodSystem:
     """ ファーストフードレジシステム """
@@ -539,10 +486,26 @@ class FastFoodSystem:
             
     def get_order(self):
         """ 注文を確認 """
-        return self.order_list
+        print(self.order_list)
 ```
 
-@[16-18](注文リストを返す処理を入れる)
+@[7-9](「set_menu」メソッドを書き換えます)
+@[7](「set_menu」メソッドは引数「menu」があり)
+@[7]({'コーラー': 100, 'ハンバーガー': 110, 'ポテト': 100}の)
+@[7](辞書型の「menu」データがくることを想定しています)
+@[7,9](「self.menu_dict」に値を登録できるようにします)
+@[7-9]（「set_menu」メソッドの完成です）
+@[１２−１４](次に「set_menu」メソッドを書き換えます)
+@[13](注文商品がメニューにあるときだけ)
+@[13-14](「注文リスト」に追加できるようにする)
+@[14](しかし「注文リスト」は宣言されていないためエラーとなるので)
+@[4,5](特殊メソッドの「\__\init\_\_」を作成し)
+@[4,5](「注文リスト」を配列で初期化させる)
+@[１２−１４](「set_menu」メソッドの完成です)
+@[１6−１8](次は「get_order」メソッドを書き換えます)
+@[14](ここで追加した「注文リスト」リストの内容)
+@[18](出力する処理を入れます)
+@[１6−１8](これで「get_order」メソッドの完成です)
 
 ---
 
