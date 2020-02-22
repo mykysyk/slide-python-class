@@ -240,7 +240,7 @@ def 色変えて(車データ, 色):
 
 ---
 
-#### Q.メソッドになぜ「self」が必要なの1
+#### Q.クラスメソッドの第一引数になぜ「self」の記述が必要なの
 
 #### A. Pythonの生みの親Guidoがブログエントリでそのことを説明しています
 http://neopythonic.blogspot.com/2008/10/why-explicit-self-has-to-stay.html
