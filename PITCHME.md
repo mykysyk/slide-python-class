@@ -470,81 +470,79 @@ https://raw.githubusercontent.com/mykysyk/slide-python-class/master/vanilla.py
 
 set_menu 
 
-```
-    def set_menu(self, menu):
-        """ メニューを登録 """
-        pass
-```
-
-@[3](「pass」を取り除き)
-
----
-
-set_menu
-
-```
+```python
+class FastFoodSystem:
+    """ ファーストフードレジシステム """
+    
     def set_menu(self, menu):
         """ メニューを登録 """
         self.menu_dict = menu
-```
-
-@[3](「self.menu_dict = menu」に変更)
-
----
-
-set_order
-
-```
+        
     def set_order(self, order):
         """ 注文を登録 """
         pass
-```
-
-@[3](「pass」を取り除き)
-
----
-
-set_order
-
-```
-    def __init__(self):
-        self.order_list = []
-
-    def set_order(self, order):
-        """ 注文を登録 """
-        if order in self.menu_dict:
-            self.order_list.append(order)
-```
-
-@[6](注文商品がメニューにあるときだけ)
-@[6-7](「注文リスト」に追加できるようにする)
-@[7](しかし「注文リスト」は宣言されていないためエラーとなるので)
-@[1,2](特殊メソッドの「\__\init\_\_」を作成し)
-@[1,2](「注文リスト」を配列で初期化させる)
-
----
-
-get_order
-
-```
+        
     def get_order(self):
         """ 注文を確認 """
         pass
 ```
 
-@[3](「pass」を取り除き)
+@[4](set_menuメソッドは辞書型のメニューを登録するので)
+@[6](「pass」を取り除き、「self.menu_dict」に登録できるようにする)
 
 ---
 
-get_order
-
+```python
+class FastFoodSystem:
+    """ ファーストフードレジシステム """
+    
+    def __init__(self):
+        self.order_list = []
+        
+    def set_menu(self, menu):
+        """ メニューを登録 """
+        self.menu_dict = menu
+        
+    def set_order(self, order):
+        """ 注文を登録 """
+        if order in self.menu_dict:
+            self.order_list.append(order)
+        
+    def get_order(self):
+        """ 注文を確認 """
+        pass
 ```
+
+@[13](注文商品がメニューにあるときだけ)
+@[13-14](「注文リスト」に追加できるようにする)
+@[14](しかし「注文リスト」は宣言されていないためエラーとなるので)
+@[4,5](特殊メソッドの「\__\init\_\_」を作成し)
+@[4,5](「注文リスト」を配列で初期化させる)
+
+---
+
+```python
+class FastFoodSystem:
+    """ ファーストフードレジシステム """
+    
+    def __init__(self):
+        self.order_list = []
+        
+    def set_menu(self, menu):
+        """ メニューを登録 """
+        self.menu_dict = menu
+        
+    def set_order(self, order):
+        """ 注文を登録 """
+        if order in self.menu_dict:
+            self.order_list.append(order)
+            
     def get_order(self):
         """ 注文を確認 """
         return self.order_list
 ```
 
-@[3](注文リストを返す処理を入れる)
+@[16-18](注文リストを返す処理を入れる)
 
 ---
 
