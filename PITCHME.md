@@ -513,13 +513,13 @@ class FastFoodSystem:
 ---
 
 ```python
-ファミマ = FastFoodSystem()
-ファミマ.set_menu({'伊右衛門': 150, 'ファミチキ': 100, '弁当': 400})
-ファミマ.set_order('弁当')
-ファミマ.set_order('伊右衛門')
-ファミマ.set_order('ファミチキ')
-ファミマ.set_order('MacBookPro')
-ファミマ.get_order() # ['弁当', '伊右衛門', 'ファミチキ']
+マクドナルド = FastFoodSystem()
+マクドナルド.set_menu({'コーラー': 100, 'ハンバーガー': 110, 'ポテト': 100})
+マクドナルド.set_order('ハンバーガー')
+マクドナルド.set_order('ポテト')
+マクドナルド.set_order('コーラー')
+マクドナルド.set_order('モスバーガー')
+マクドナルド.get_order() # ['ハンバーガー', 'ポテト', 'コーラー']
 ```
 
 @[0](どうですか、想定通りのデータが出力されましたか)
