@@ -496,7 +496,7 @@ class FastFoodSystem:
 @[7](辞書型の「menu」データがくることを想定しています)
 @[7,9](「self.menu_dict」に値を登録できるようにします)
 @[7-9](これで「set_menu」メソッドの完成です)
-@[12](次に「set_order」メソッドを書き換えます)
+@[11](次に「set_order」メソッドを書き換えます)
 @[13](注文商品がメニューにあるときだけ)
 @[13-14](「注文リスト」に追加できるようにします)
 @[14](しかし「注文リスト」である「self.order_list」は)
@@ -513,13 +513,13 @@ class FastFoodSystem:
 ---
 
 ```python
-macdonald = FastFoodSystem()
-macdonald.set_menu({'コーラー': 100, 'ハンバーガー': 110, 'ポテト': 100})
-macdonald.set_order('ハンバーガー')
-macdonald.set_order('ポテト')
-macdonald.set_order('コーラー')
-macdonald.set_order('モスバーガー')
-macdonald.get_order() # ['ハンバーガー', 'ポテト', 'コーラー']
+ファミマ = FastFoodSystem()
+ファミマ.set_menu({'伊右衛門': 150, 'ファミチキ': 100, '弁当': 400})
+ファミマ.set_order('弁当')
+ファミマ.set_order('伊右衛門')
+ファミマ.set_order('ファミチキ')
+ファミマ.set_order('MacBookPro')
+ファミマ.get_order() # ['弁当', '伊右衛門', 'ファミチキ']
 ```
 
 ---
