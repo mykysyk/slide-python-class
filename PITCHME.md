@@ -253,6 +253,8 @@ http://neopythonic.blogspot.com/2008/10/why-explicit-self-has-to-stay.html
 
 私の車.色変えて('赤') == 車の設計図.色変えて(私の車, '赤')
 
+---
+
 試してみよう。
 
 ```python
