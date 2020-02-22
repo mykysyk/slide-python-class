@@ -2,6 +2,7 @@
 
 class FastFoodSystem:
     """ ファーストフードレジシステム """
+    
     def set_menu(self, menu):
         """ メニューを登録 """
         pass
@@ -36,15 +37,12 @@ macdonald.set_order('ハンバーガー')
 macdonald.set_order('ポテト')
 macdonald.set_order('コーラー')
 macdonald.set_order('モスバーガー')
-order = macdonald.get_order()
-print(order)                        # ['ハンバーガー', 'ポテト', 'コーラー']
-total_price = macdonald.get_total_price()
-print(total_price)                 # 310
+macdonald.get_order()           # ['ハンバーガー', 'ポテト', 'コーラー']
+macdonald.get_total_price()     # 310
 macdonald.set_deposit(500)
-change = macdonald.get_change()
-print(change)                       # 190
-receipt = macdonald.get_receipt()
-print(receipt)                      # {'change': 190,
-                                    #  'deposit': 500,
-                                    #  'order_list': ['ハンバーガー', 'ポテト', 'コーラー'],
-                                    #  'total_price': 310}
+macdonald.get_change()          # 190
+macdonald.get_receipt()         # {'change': 190,
+                                #  'deposit': 500,
+                                #  'order_list': ['ハンバーガー', 'ポテト', 'コーラー'],
+                                #  'total_price': 310}
+
